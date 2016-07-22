@@ -1,7 +1,6 @@
 <?php
-namespace Convenia\Dominio\EmployeeExport\Tests;
 
-use PHPUnit_Framework_TestCase;
+namespace Convenia\Dominio\EmployeeExport\Tests;
 
 /**
  * Class BaseTest.

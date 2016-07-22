@@ -2,8 +2,8 @@
 
 namespace Convenia\Dominio\EmployeeExport\Registries;
 
-use Convenia\Dominio\EmployeeExport\Fields\Formats\FieldN;
 use Convenia\Dominio\EmployeeExport\Fields\Formats\FieldC;
+use Convenia\Dominio\EmployeeExport\Fields\Formats\FieldN;
 
 /**
  * Class EmployeeRegistry.
@@ -19,22 +19,22 @@ class EmployeeRegistry extends Registry
         'companyCode' => [
             'format'       => FieldC::class,
             'position'     => 1,
-            'length'       => 7
+            'length'       => 7,
         ],
         'code' => [
             'format'       => FieldC::class,
             'position'     => 8,
-            'length'       => 7
+            'length'       => 7,
         ],
         'branchCode' => [
             'format'       => FieldC::class,
             'position'     => 15,
-            'length'       => 7
+            'length'       => 7,
         ],
         'blank' => [
             'format'       => FieldC::class,
             'position'     => 22,
-            'length'       => 7
+            'length'       => 7,
         ],
         'name' => [
             'format'   => FieldC::class,
@@ -42,7 +42,7 @@ class EmployeeRegistry extends Registry
             'length'   => 70,
             'rules'    => [
                 'required',
-            ]
+            ],
         ],
         /*'birthDate' => [
             'format'       => FieldN::class,
