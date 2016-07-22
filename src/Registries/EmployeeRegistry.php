@@ -3,7 +3,6 @@
 namespace Convenia\Dominio\EmployeeExport\Registries;
 
 use Convenia\Dominio\EmployeeExport\Fields\Formats\FieldC;
-use Convenia\Dominio\EmployeeExport\Fields\Formats\FieldN;
 
 /**
  * Class EmployeeRegistry.
