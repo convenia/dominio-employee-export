@@ -1,5 +1,5 @@
 <?php
-namespace Convenia\DominioImport\Tests;
+namespace Convenia\Dominio\EmployeeExport\Tests;
 
 use PHPUnit_Framework_TestCase;
 

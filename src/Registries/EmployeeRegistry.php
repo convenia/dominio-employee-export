@@ -1,9 +1,9 @@
 <?php
 
-namespace Convenia\DominioImport\Registries;
+namespace Convenia\Dominio\EmployeeExport\Registries;
 
-use Convenia\DominioImport\Fields\Formats\FieldN;
-use Convenia\DominioImport\Fields\Formats\FieldC;
+use Convenia\Dominio\EmployeeExport\Fields\Formats\FieldN;
+use Convenia\Dominio\EmployeeExport\Fields\Formats\FieldC;
 
 /**
  * Class EmployeeRegistry.

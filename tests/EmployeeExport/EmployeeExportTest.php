@@ -1,19 +1,19 @@
 <?php
 
-namespace Convenia\DominioImport\Tests;
+namespace Convenia\Dominio\EmployeeExport\Tests;
 
-use Convenia\DominioImport\DominioImport;
+use Convenia\Dominio\EmployeeExport\EmployeeExport;
 
 /**
- * Class DominioImport
+ * Class EmployeeExportTest
  */
-class DominioImportTest extends BaseTest
+class EmployeeExportTest extends BaseTest
 {
     public function test_generate_file_to_import()
     {
-        $dominioImport = new DominioImport;
+        $employeeExport = new EmployeeExport;
 
-        $fileContents = $dominioImport
+        $fileContents = $employeeExport
                     ->employees([
                         [
                             'name' => 'Vincent Vega'

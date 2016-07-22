@@ -1,9 +1,9 @@
 <?php
 
-namespace Convenia\DominioImport\Fields\Validations;
+namespace Convenia\Dominio\EmployeeExport\Fields\Validations;
 
-use Convenia\DominioImport\Exceptions\ValidatorException;
-use Convenia\DominioImport\Exceptions\ValidatorInvalidRuleException;
+use Convenia\Dominio\EmployeeExport\Exceptions\ValidatorException;
+use Convenia\Dominio\EmployeeExport\Exceptions\ValidatorInvalidRuleException;
 use Stringy\Stringy;
 use DateTime;
 
@@ -115,7 +115,7 @@ class Validation
      *
      * @param $methodName
      * @return bool
-     * @throws \Convenia\DominioImport\Exceptions\ValidatorInvalidRuleException
+     * @throws \Convenia\Dominio\EmployeeExport\Exceptions\ValidatorInvalidRuleException
      */
     protected function methodExists($methodName)
     {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Convenia\DominioImport\Fields\Formats;
+namespace Convenia\Dominio\EmployeeExport\Fields\Formats;
 
-use Convenia\DominioImport\Fields\Field;
+use Convenia\Dominio\EmployeeExport\Fields\Field;
 
 /**
  * Class FieldC.
@@ -16,7 +16,7 @@ class FieldC extends Field
      */
     public function format()
     {
-//        $this->value = $this->value->slugify(' ')->toUpperCase();
+        //        $this->value = $this->value->slugify(' ')->toUpperCase();
         $this->value = $this->value->slugify(' ')->toTitleCase();
         $actualLength = $this->value->length();
         $this->value = $this->value->truncate($this->getLength());

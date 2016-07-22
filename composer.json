@@ -27,12 +27,12 @@
       "src/"
     ],
     "psr-4": {
-      "Convenia\\DominioImport\\": "src/"
+      "Convenia\\Dominio\\EmployeeExport\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Convenia\\DominioImport\\Tests\\": "tests/DominioImport/"
+      "Convenia\\Dominio\\EmployeeExport\\Tests\\": "tests/DominioImport/"
     }
   },
   "config":{

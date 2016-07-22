@@ -1,6 +1,6 @@
 <?php
 
-namespace Convenia\DominioImport\Exceptions;
+namespace Convenia\Dominio\EmployeeExport\Exceptions;
 
 class RegistryTooShortException extends \Exception
 {

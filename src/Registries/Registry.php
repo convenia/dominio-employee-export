@@ -1,13 +1,13 @@
 <?php
 
-namespace Convenia\DominioImport\Registries;
+namespace Convenia\Dominio\EmployeeExport\Registries;
 
-use Convenia\DominioImport\Fields\Field;
-use Convenia\DominioImport\Exceptions\FieldNotExistsException;
-use Convenia\DominioImport\Exceptions\RegistryTooLongException;
-use Convenia\DominioImport\Exceptions\RegistryTooShortException;
-use Convenia\DominioImport\Fields\Validations\Validation;
-use Convenia\DominioImport\Interfaces\RegistryInterface;
+use Convenia\Dominio\EmployeeExport\Fields\Field;
+use Convenia\Dominio\EmployeeExport\Exceptions\FieldNotExistsException;
+use Convenia\Dominio\EmployeeExport\Exceptions\RegistryTooLongException;
+use Convenia\Dominio\EmployeeExport\Exceptions\RegistryTooShortException;
+use Convenia\Dominio\EmployeeExport\Fields\Validations\Validation;
+use Convenia\Dominio\EmployeeExport\Interfaces\RegistryInterface;
 use Stringy\Stringy;
 
 /**
@@ -76,7 +76,7 @@ abstract class Registry
 
         try {
             $this->validator->validate($fields);
-        } catch (\Convenia\DominioImport\Exceptions\RegistryTooShortException $e) {
+        } catch (\Convenia\Dominio\EmployeeExport\Exceptions\RegistryTooShortException $e) {
             new RegistryTooShortException($e->getMessage(). 'in registry '.get_class());
         }
 

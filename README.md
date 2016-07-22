@@ -4,7 +4,7 @@ Classe para exportar dados de funcionários de sua empresa para o padrão aceito
 
 ## Requisitos
 
-* PHP 5.5+
+* PHP 5+
 
 ### Instale usando o composer [Composer](http://getcomposer.org/)
 
@@ -15,9 +15,9 @@ composer require convenia/dominio-import
 ## Exemplos de Uso
 
 ```php
-use Convenia\DominioImport\DominioImport;
+use Convenia\Dominio\EmployeeExport\EmployeeExport;
 
-$dominio = new DominioImport;
+$dominio = new EmployeeExport;
 $dominio->employees([
             [
                 'name' => 'Vincent Vega'

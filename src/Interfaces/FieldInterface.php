@@ -1,6 +1,6 @@
 <?php
 
-namespace Convenia\DominioImport\Interfaces;
+namespace Convenia\Dominio\EmployeeExport\Interfaces;
 
 /**
  * Interface FieldInterface.

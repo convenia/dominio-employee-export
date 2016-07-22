@@ -1,12 +1,13 @@
 <?php
 
-namespace Convenia\DominioImport;
-use Convenia\DominioImport\Registries\EmployeeRegistry;
+namespace Convenia\Dominio\EmployeeExport;
+
+use Convenia\Dominio\EmployeeExport\Registries\EmployeeRegistry;
 
 /**
- * Class DominioImport
+ * Class EmployeeExport
  */
-class DominioImport
+class EmployeeExport
 {
     /**
      * @var array

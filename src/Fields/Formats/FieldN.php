@@ -1,8 +1,8 @@
 <?php
 
-namespace Convenia\DominioImport\Fields\Formats;
+namespace Convenia\Dominio\EmployeeExport\Fields\Formats;
 
-use Convenia\DominioImport\Fields\Field;
+use Convenia\Dominio\EmployeeExport\Fields\Field;
 
 /**
  * Class FieldN.
