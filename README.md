@@ -1,6 +1,6 @@
 # Dominio Employee Export
 
-Classe para exportar dados de funcionários de sua empresa para o padrão aceito no softwre de folha [Domínio](http://www.dominiosistemas.com.br/)
+Classe para exportar dados de funcionários de sua empresa para o padrão aceito no software de folha [Domínio](http://www.dominiosistemas.com.br/)
 
 ## Requisitos
 
