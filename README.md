@@ -10,7 +10,7 @@ Classe para exportar dados de funcionários de sua empresa para o padrão aceito
 ### Instale usando o composer [Composer](http://getcomposer.org/)
 
 ```bash
-composer require convenia/dominio-import
+composer require convenia/dominio-employee-export
 ```
 
 ## Exemplos de Uso
