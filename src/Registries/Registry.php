@@ -2,12 +2,11 @@
 
 namespace Convenia\Dominio\EmployeeExport\Registries;
 
-use Convenia\Dominio\EmployeeExport\Fields\Field;
 use Convenia\Dominio\EmployeeExport\Exceptions\FieldNotExistsException;
 use Convenia\Dominio\EmployeeExport\Exceptions\RegistryTooLongException;
 use Convenia\Dominio\EmployeeExport\Exceptions\RegistryTooShortException;
+use Convenia\Dominio\EmployeeExport\Fields\Field;
 use Convenia\Dominio\EmployeeExport\Fields\Validations\Validation;
-use Convenia\Dominio\EmployeeExport\Interfaces\RegistryInterface;
 use Stringy\Stringy;
 
 /**
@@ -57,7 +56,6 @@ abstract class Registry
      * Registry constructor.
      *
      * @param array $fields
-     *
      */
     public function __construct(array $fields = [])
     {
@@ -77,7 +75,7 @@ abstract class Registry
         try {
             $this->validator->validate($fields);
         } catch (\Convenia\Dominio\EmployeeExport\Exceptions\RegistryTooShortException $e) {
-            new RegistryTooShortException($e->getMessage(). 'in registry '.get_class());
+            new RegistryTooShortException($e->getMessage().'in registry '.get_class());
         }
 
         $this->generate();
@@ -85,7 +83,7 @@ abstract class Registry
     }
 
     /**
-     * Fill the $values array with default and required values
+     * Fill the $values array with default and required values.
      */
     protected function fill()
     {
@@ -101,7 +99,7 @@ abstract class Registry
     }
 
     /**
-     * Generate the full registry string
+     * Generate the full registry string.
      *
      * @return string
      */
@@ -109,7 +107,7 @@ abstract class Registry
     {
         $this->resultString = Stringy::create('');
 
-        /**
+        /*
          * @var Field
          */
         foreach ($this->values as $valueName => $valueClass) {
@@ -120,10 +118,12 @@ abstract class Registry
     }
 
     /**
-     * Validate if the generated result string matches the length
-     * @return bool
+     * Validate if the generated result string matches the length.
+     *
      * @throws RegistryTooLongException
      * @throws RegistryTooShortException
+     *
+     * @return bool
      */
     public function validateLength()
     {
@@ -142,6 +142,7 @@ abstract class Registry
 
     /**
      * @param $fieldName
+     *
      * @return Field
      */
     public function getField($fieldName)

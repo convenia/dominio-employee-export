@@ -5,7 +5,7 @@ namespace Convenia\Dominio\EmployeeExport;
 use Convenia\Dominio\EmployeeExport\Registries\EmployeeRegistry;
 
 /**
- * Class EmployeeExport
+ * Class EmployeeExport.
  */
 class EmployeeExport
 {
@@ -29,7 +29,6 @@ class EmployeeExport
     }
 
     /**
-     *
      * @return string
      */
     public function generate()
@@ -39,6 +38,7 @@ class EmployeeExport
         foreach ($this->employees as $employee) {
             $returnString .= $employee;
         }
+
         return $returnString;
     }
 }
