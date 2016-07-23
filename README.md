@@ -19,10 +19,13 @@ composer require convenia/dominio-employee-export
 use Convenia\Dominio\EmployeeExport\EmployeeExport;
 
 $dominio = new EmployeeExport;
-$dominio->employees([
-            [
-                'name' => 'Vincent Vega'
-            ]
-        ])
+
+$employees = [
+    [
+        'name' => 'Vincent Vega'
+    ]
+];
+
+$dominio->employees($employees)
         ->generate();
 ```
