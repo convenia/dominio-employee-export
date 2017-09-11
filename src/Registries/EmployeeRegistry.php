@@ -15,27 +15,27 @@ class EmployeeRegistry extends Registry
      * @var array
      */
     protected $defaultFields = [
-        'companyCode' => [
+        'codi_emp' => [
             'format'       => FieldC::class,
             'position'     => 1,
             'length'       => 7,
         ],
-        'code' => [
+        'i_empregados' => [
             'format'       => FieldC::class,
             'position'     => 8,
             'length'       => 7,
         ],
-        'branchCode' => [
+        'i_filiais' => [
             'format'       => FieldC::class,
             'position'     => 15,
             'length'       => 7,
         ],
-        'blank' => [
+        'i_horaemp' => [
             'format'       => FieldC::class,
             'position'     => 22,
             'length'       => 7,
         ],
-        'name' => [
+        'nome' => [
             'format'   => FieldC::class,
             'position' => 29,
             'length'   => 70,
@@ -43,52 +43,52 @@ class EmployeeRegistry extends Registry
                 'required',
             ],
         ],
-        'payContribution' => [
+        'paga_contr_sind' => [
             'format'       => FieldC::class,
             'position'     => 99,
             'length'       => 1,
         ],
-        'isFgts' => [
+        'opta_fgts' => [
             'format'       => FieldC::class,
             'position'     => 100,
             'length'       => 1,
         ],
-        'category' => [
+        'categoria' => [
             'format'       => FieldC::class,
             'position'     => 101,
             'length'       => 7,
         ],
-        'monthlyHour' => [
+        'horas_mes' => [
             'format'       => FieldC::class,
             'position'     => 108,
             'length'       => 5,
         ],
-        'weekHour' => [
+        'horas_semana' => [
             'format'       => FieldC::class,
             'position'     => 113,
             'length'       => 5,
         ],
-        'dayHour' => [
+        'horas_dia' => [
             'format'       => FieldC::class,
             'position'     => 118,
             'length'       => 5,
         ],
-        'admission' => [
+        'admissao' => [
             'format'       => FieldC::class,
             'position'     => 123,
             'length'       => 10,
         ],
-        'salary' => [
+        'salario' => [
             'format'       => FieldC::class,
             'position'     => 133,
             'length'       => 17,
         ],
-        'address' => [
+        'endereco' => [
             'format'       => FieldC::class,
             'position'     => 150,
             'length'       => 40,
         ],
-        'complement' => [
+        'complemento' => [
             'format'       => FieldC::class,
             'position'     => 190,
             'length'       => 30,
@@ -98,77 +98,77 @@ class EmployeeRegistry extends Registry
             'position'     => 220,
             'length'       => 8,
         ],
-        'city' => [
+        'cidade' => [
             'format'       => FieldC::class,
             'position'     => 228,
             'length'       => 25,
         ],
-        'phone' => [
+        'fone' => [
             'format'       => FieldC::class,
             'position'     => 253,
             'length'       => 15,
         ],
-        'uf' => [
+        'estado' => [
             'format'       => FieldC::class,
             'position'     => 268,
             'length'       => 2,
         ],
-        'birthDate' => [
+        'data_nascimento' => [
             'format'       => FieldC::class,
             'position'     => 270,
             'length'       => 10,
         ],
-        'vencimento das ferias' => [
+        'venc_ferias' => [
             'format'       => FieldC::class,
             'position'     => 280,
             'length'       => 10,
         ],
-        'costCenter' => [
+        'i_ccustos' => [
             'format'       => FieldC::class,
             'position'     => 290,
             'length'       => 7,
         ],
-        'Forma pagamento' => [
+        'forma_pagto' => [
             'format'       => FieldC::class,
             'position'     => 297,
             'length'       => 1,
         ],
-        'Sexo' => [
+        'sexo' => [
             'format'       => FieldC::class,
             'position'     => 298,
             'length'       => 1,
         ],
-        'locate' => [
+        'local_nascimento' => [
             'format'       => FieldC::class,
             'position'     => 299,
             'length'       => 40,
         ],
-        'uf2' => [
+        'uf_nascimento' => [
             'format'       => FieldC::class,
             'position'     => 339,
             'length'       => 2,
         ],
-        'Estado civil' => [
+        'estado_civil' => [
             'format'       => FieldC::class,
             'position'     => 341,
             'length'       => 1,
         ],
-        'Nacionalidade' => [
+        'nacionalidade' => [
             'format'       => FieldC::class,
             'position'     => 342,
             'length'       => 7,
         ],
-        'blank2' => [
+        'ano_chegada' => [
             'format'       => FieldC::class,
             'position'     => 349,
             'length'       => 7,
         ],
-        'rg2' => [
+        'identidade' => [
             'format'       => FieldC::class,
             'position'     => 356,
             'length'       => 15,
         ],
-        'Naturalizado' => [
+        'naturalizado' => [
             'format'       => FieldC::class,
             'position'     => 371,
             'length'       => 1,
@@ -183,962 +183,962 @@ class EmployeeRegistry extends Registry
             'position'     => 383,
             'length'       => 11,
         ],
-        'ctps' => [
+        'cart_prof' => [
             'format'       => FieldC::class,
             'position'     => 394,
             'length'       => 11,
         ],
-        'SerieCtps' => [
+        'serie_cart_prof' => [
             'format'       => FieldC::class,
             'position'     => 405,
             'length'       => 5,
         ],
-        'fgtsDateOption' => [
+        'opcao_fgts' => [
             'format'       => FieldC::class,
             'position'     => 410,
             'length'       => 10,
         ],
-        'fgtsAccount' => [
+        'conta_fgts' => [
             'format'       => FieldC::class,
             'position'     => 420,
             'length'       => 12,
         ],
-        'pointCard' => [
+        'num_cart_ponto' => [
             'format'       => FieldC::class,
             'position'     => 432,
             'length'       => 12,
         ],
-        'Vencto.exame Med' => [
+        'venc_exame_medico' => [
             'format'       => FieldC::class,
             'position'     => 444,
             'length'       => 10,
         ],
-        'Vinculo empregaticio' => [
+        'vinculo' => [
             'format'       => FieldC::class,
             'position'     => 454,
             'length'       => 7,
         ],
-        'bank' => [
+        'i_bancos' => [
             'format'       => FieldC::class,
             'position'     => 461,
             'length'       => 7,
         ],
-        'account' => [
+        'conta_corr' => [
             'format'       => FieldC::class,
             'position'     => 468,
             'length'       => 15,
         ],
-        'Data Vantagem' => [
+        'data_base' => [
             'format'       => FieldC::class,
             'position'     => 490,
             'length'       => 10,
         ],
-        'Cart.motorista' => [
+        'cart_motorista' => [
             'format'       => FieldC::class,
             'position'     => 500,
             'length'       => 15,
         ],
-        'category1' => [
+        'categ_cart_mot' => [
             'format'       => FieldC::class,
             'position'     => 515,
             'length'       => 3,
         ],
-        'Vencto' => [
+        'venc_cart_mot' => [
             'format'       => FieldC::class,
             'position'     => 518,
             'length'       => 10,
         ],
-        'transferDate' => [
+        'data_transf' => [
             'format'       => FieldC::class,
             'position'     => 528,
             'length'       => 10,
         ],
-        'Sai da RAIS' => [
+        'sai_rais' => [
             'format'       => FieldC::class,
             'position'     => 538,
             'length'       => 1,
         ],
-        'Grau instrucao' => [
+        'grau_instrucao' => [
             'format'       => FieldC::class,
             'position'     => 539,
             'length'       => 7,
         ],
-        'departament' => [
+        'i_depto' => [
             'format'       => FieldC::class,
             'position'     => 546,
             'length'       => 7,
         ],
-        'admissionType' => [
+        'emprego_ant' => [
             'format'       => FieldC::class,
             'position'     => 553,
             'length'       => 7,
         ],
-        'mothersFather' => [
+        'nome_pai' => [
             'format'       => FieldC::class,
             'position'     => 560,
             'length'       => 70,
         ],
-        'mothersName' => [
+        'nome_mae' => [
             'format'       => FieldC::class,
             'position'     => 630,
             'length'       => 70,
         ],
-        'uf4' => [
+        'uf_cart_prof' => [
             'format'       => FieldC::class,
             'position'     => 700,
             'length'       => 2,
         ],
-        'sindicate' => [
+        'i_sindicatos' => [
             'format'       => FieldC::class,
             'position'     => 702,
             'length'       => 7,
         ],
-        'Orgao expedicao' => [
+        'org_exp_ident' => [
             'format'       => FieldC::class,
             'position'     => 709,
             'length'       => 10,
         ],
-        'uf3' => [
+        'uf_exp_ident' => [
             'format'       => FieldC::class,
             'position'     => 719,
             'length'       => 2,
         ],
-        'date' => [
+        'dt_exp_ident' => [
             'format'       => FieldC::class,
             'position'     => 721,
             'length'       => 10,
         ],
-        'expeditionDate' => [
+        'dt_exp_cprof' => [
             'format'       => FieldC::class,
             'position'     => 731,
             'length'       => 10,
         ],
-        'Tipo de visto de estrangeiro' => [
+        'tipo_visto_estrangeiro' => [
             'format'       => FieldC::class,
             'position'     => 741,
             'length'       => 7,
         ],
-        'expirationDateRg' => [
+        'validade_id_estr' => [
             'format'       => FieldC::class,
             'position'     => 748,
             'length'       => 10,
         ],
-        'Data de validade da carteira de trabalho' => [
+        'validade_ctrab_estr' => [
             'format'       => FieldC::class,
             'position'     => 758,
             'length'       => 10,
         ],
-        'Grupo sang.' => [
+        'grupo_sanguineo' => [
             'format'       => FieldC::class,
             'position'     => 768,
             'length'       => 2,
         ],
-        'RH' => [
+        'rh_sanguineo' => [
             'format'       => FieldC::class,
             'position'     => 770,
             'length'       => 1,
         ],
-        'Nome do conjuge ' => [
+        'nome_conjuge' => [
             'format'       => FieldC::class,
             'position'     => 771,
             'length'       => 40,
         ],
-        'Ult.exame Medico' => [
+        'ultimo_exame_medico' => [
             'format'       => FieldC::class,
             'position'     => 811,
             'length'       => 10,
         ],
-        'Conselhos' => [
+        'i_conselhos' => [
             'format'       => FieldC::class,
             'position'     => 821,
             'length'       => 7,
         ],
-        'No.registro cons.regional' => [
+        'num_reg_cons_reg' => [
             'format'       => FieldC::class,
             'position'     => 828,
             'length'       => 8,
         ],
-        'Regiao do conselho' => [
+        'regiao_reg_cons_regional' => [
             'format'       => FieldC::class,
             'position'     => 836,
             'length'       => 8,
         ],
-        'Estabilidade' => [
+        'i_estabilidade' => [
             'format'       => FieldC::class,
             'position'     => 844,
             'length'       => 7,
         ],
-        'Inicio estabilidade' => [
+        'inicio_estabilidade' => [
             'format'       => FieldC::class,
             'position'     => 851,
             'length'       => 10,
         ],
-        'Fim estabilidade' => [
+        'fim_estabilidade' => [
             'format'       => FieldC::class,
             'position'     => 861,
             'length'       => 10,
         ],
-        'Local trabalho' => [
+        'i_localtrab' => [
             'format'       => FieldC::class,
             'position'     => 871,
             'length'       => 7,
         ],
-        'Titulo eleitoral' => [
+        'titulo_eleit' => [
             'format'       => FieldC::class,
             'position'     => 878,
             'length'       => 15,
         ],
-        'Zona eleitoral' => [
+        'zona_eleit' => [
             'format'       => FieldC::class,
             'position'     => 893,
             'length'       => 3,
         ],
-        'Secao' => [
+        'secao_eleit' => [
             'format'       => FieldC::class,
             'position'     => 896,
             'length'       => 4,
         ],
-        'Data de cad.PIS' => [
+        'dcad_pis' => [
             'format'       => FieldC::class,
             'position'     => 900,
             'length'       => 10,
         ],
-        'Servico' => [
+        'i_servicos' => [
             'format'       => FieldC::class,
             'position'     => 910,
             'length'       => 7,
         ],
-        'Inicio prazo determinado' => [
+        'ini_praz_det' => [
             'format'       => FieldC::class,
             'position'     => 917,
             'length'       => 10,
         ],
-        'Fim prazo determinado' => [
+        'fim_praz_det' => [
             'format'       => FieldC::class,
             'position'     => 927,
             'length'       => 10,
         ],
-        'Multiplos vinculos' => [
+        'possui_vinc_out_emp' => [
             'format'       => FieldC::class,
             'position'     => 937,
             'length'       => 1,
         ],
-        'Vinculo outra empresa ' => [
+        'empresa_outro_vinc' => [
             'format'       => FieldC::class,
             'position'     => 938,
             'length'       => 7,
         ],
-        'Cod.vinculo outra empresa (sem uso)' => [
+        'codigo_vinc_outra_emp' => [
             'format'       => FieldC::class,
             'position'     => 945,
             'length'       => 7,
         ],
-        'Data da ultima contribuicao sindical' => [
+        'ult_cont_sind' => [
             'format'       => FieldC::class,
             'position'     => 952,
             'length'       => 10,
         ],
-        'Ocorrencia SEFIP' => [
+        'oco_sefip' => [
             'format'       => FieldC::class,
             'position'     => 962,
             'length'       => 7,
         ],
-        'Raca/Cor ' => [
+        'cor' => [
             'format'       => FieldC::class,
             'position'     => 969,
             'length'       => 7,
         ],
-        'Cart.reserv.' => [
+        'cart_reservista' => [
             'format'       => FieldC::class,
             'position'     => 976,
             'length'       => 12,
         ],
-        'Cat.' => [
+        'cate_reservista' => [
             'format'       => FieldC::class,
             'position'     => 988,
             'length'       => 5,
         ],
-        'Codigo Nivel ' => [
+        'i_niveis' => [
             'format'       => FieldC::class,
             'position'     => 993,
             'length'       => 7,
         ],
-        'Classe Nivel' => [
+        'i_clasniveis' => [
             'format'       => FieldC::class,
             'position'     => 1000,
             'length'       => 1,
         ],
-        'Referencia Nivel' => [
+        'i_refeniveis' => [
             'format'       => FieldC::class,
             'position'     => 1001,
             'length'       => 7,
         ],
-        'Matricula' => [
+        'matricula' => [
             'format'       => FieldC::class,
             'position'     => 1008,
             'length'       => 20,
         ],
-        'Deficiente fisico' => [
+        'deficiente_fisico' => [
             'format'       => FieldC::class,
             'position'     => 1028,
             'length'       => 3,
         ],
-        'Matricula INSS' => [
+        'matric_inss' => [
             'format'       => FieldC::class,
             'position'     => 1031,
             'length'       => 11,
         ],
-        'tipo_contrib ' => [
+        'tipo_contrib' => [
             'format'       => FieldC::class,
             'position'     => 1042,
             'length'       => 1,
         ],
-        'Contribuinte individual' => [
+        'contrib_indiv' => [
             'format'       => FieldC::class,
             'position'     => 1043,
             'length'       => 1,
         ],
-        'Inicio contribuicao ' => [
+        'inicio_contribuicao' => [
             'format'       => FieldC::class,
             'position'     => 1044,
             'length'       => 10,
         ],
-        'Classe de contribuicao' => [
+        'classe_atual' => [
             'format'       => FieldC::class,
             'position'     => 1054,
             'length'       => 7,
         ],
-        'Inicio de contribuicao na classe' => [
+        'data_classe' => [
             'format'       => FieldC::class,
             'position'     => 1061,
             'length'       => 10,
         ],
-        'Troca automatica de classe' => [
+        'troca_aut_clas' => [
             'format'       => FieldC::class,
             'position'     => 1071,
             'length'       => 3,
         ],
-        'Evento' => [
+        'evento_prolabore' => [
             'format'       => FieldC::class,
             'position'     => 1074,
             'length'       => 7,
         ],
-        'GPS Trimestral' => [
+        'gps_trimestral' => [
             'format'       => FieldC::class,
             'position'     => 1081,
             'length'       => 3,
         ],
-        'Deducao na GPS ' => [
+        'gps_deducao' => [
             'format'       => FieldC::class,
             'position'     => 1084,
             'length'       => 3,
         ],
-        'Codigo2' => [
+        'i_contribuintes' => [
             'format'       => FieldC::class,
             'position'     => 1087,
             'length'       => 7,
         ],
-        'tipo' => [
+        'tipo_epr' => [
             'format'       => FieldC::class,
             'position'     => 1094,
             'length'       => 3,
         ],
-        'sistemas' => [
+        'usa_sist' => [
             'format'       => FieldC::class,
             'position'     => 1097,
             'length'       => 7,
         ],
-        'Permura de turma ' => [
+        'tempermuta' => [
             'format'       => FieldC::class,
             'position'     => 1104,
             'length'       => 3,
         ],
-        'Turma' => [
+        'i_turmas' => [
             'format'       => FieldC::class,
             'position'     => 1107,
             'length'       => 7,
         ],
-        'Codigo relogio1' => [
+        'relogio1' => [
             'format'       => FieldC::class,
             'position'     => 1114,
             'length'       => 7,
         ],
-        'Codigo relogio2' => [
+        'relogio2' => [
             'format'       => FieldC::class,
             'position'     => 1121,
             'length'       => 7,
         ],
-        'Codigo relogio3' => [
+        'relogio3' => [
             'format'       => FieldC::class,
             'position'     => 1128,
             'length'       => 7,
         ],
-        'Codigo relogio4' => [
+        'relogio4' => [
             'format'       => FieldC::class,
             'position'     => 1135,
             'length'       => 7,
         ],
-        'Codigo relogio5' => [
+        'relogio5' => [
             'format'       => FieldC::class,
             'position'     => 1142,
             'length'       => 7,
         ],
-        'bater em um relogio nao autorizado' => [
+        'aco_nao_aut' => [
             'format'       => FieldC::class,
             'position'     => 1149,
             'length'       => 1,
         ],
-        'Codigo exportacao para folha' => [
+        'codigo_exportacao' => [
             'format'       => FieldC::class,
             'position'     => 1150,
             'length'       => 7,
         ],
-        'Codigo' => [
+        'transf_codi_emp' => [
             'format'       => FieldC::class,
             'position'     => 1157,
             'length'       => 7,
         ],
-        'Empregado' => [
+        'transf_i_empregados' => [
             'format'       => FieldC::class,
             'position'     => 1164,
             'length'       => 7,
         ],
-        'blank1' => [
+        'regime_trabalho' => [
             'format'       => FieldC::class,
             'position'     => 1171,
             'length'       => 7,
         ],
-        'Domicilio bancario' => [
+        'pis_domi_banc' => [
             'format'       => FieldC::class,
             'position'     => 1178,
             'length'       => 40,
         ],
-        'Numero banco' => [
+        'pis_num_banco' => [
             'format'       => FieldC::class,
             'position'     => 1218,
             'length'       => 7,
         ],
-        'Agencia PIS ' => [
+        'pis_agencia' => [
             'format'       => FieldC::class,
             'position'     => 1225,
             'length'       => 7,
         ],
-        'PIS Digito' => [
+        'pis_agencia_dv' => [
             'format'       => FieldC::class,
             'position'     => 1232,
             'length'       => 3,
         ],
-        'Endereco banco ' => [
+        'pis_end_banco' => [
             'format'       => FieldC::class,
             'position'     => 1235,
             'length'       => 40,
         ],
-        'Autorizacao' => [
+        'autoriza_tf' => [
             'format'       => FieldC::class,
             'position'     => 1275,
             'length'       => 1,
         ],
-        'Tipo do valor' => [
+        'tipo_valor_tf' => [
             'format'       => FieldC::class,
             'position'     => 1276,
             'length'       => 3,
         ],
-        'Valor Ticket Farma ' => [
+        'valor_tf' => [
             'format'       => FieldC::class,
             'position'     => 1279,
             'length'       => 13,
         ],
-        'Data emissao Ticket farma' => [
+        'data_emissao_tf' => [
             'format'       => FieldC::class,
             'position'     => 1292,
             'length'       => 10,
         ],
-        'Matricula2' => [
+        'matricula_tf' => [
             'format'       => FieldC::class,
             'position'     => 1302,
             'length'       => 12,
         ],
-        'Bairro' => [
+        'bairro' => [
             'format'       => FieldC::class,
             'position'     => 1314,
             'length'       => 40,
         ],
-        'Sindicalizado' => [
+        'sindicalizado' => [
             'format'       => FieldC::class,
             'position'     => 1354,
             'length'       => 3,
         ],
-        'No.' => [
+        'numero_end' => [
             'format'       => FieldC::class,
             'position'     => 1357,
             'length'       => 7,
         ],
-        'Emitir Recibo' => [
+        'imprime_recibo' => [
             'format'       => FieldC::class,
             'position'     => 1364,
             'length'       => 3,
         ],
-        'Origem do registro' => [
+        'origem_reg' => [
             'format'       => FieldC::class,
             'position'     => 1367,
             'length'       => 3,
         ],
-        'Telefone 2' => [
+        'fone2' => [
             'format'       => FieldC::class,
             'position'     => 1370,
             'length'       => 15,
         ],
-        'Tipo de servico para deducao do IRRF ' => [
+        'tipo_servico' => [
             'format'       => FieldC::class,
             'position'     => 1385,
             'length'       => 1,
         ],
-        'Contrato de Experiencia' => [
+        'contr_exp' => [
             'format'       => FieldC::class,
             'position'     => 1386,
             'length'       => 3,
         ],
-        'Prorrogacao do prazo determinado' => [
+        'pro_praz_det' => [
             'format'       => FieldC::class,
             'position'     => 1389,
             'length'       => 10,
         ],
-        'Calcular contribuicao fixa sobre 1 salario mÌnimo:' => [
+        'contr_sobre_sal_min' => [
             'format'       => FieldC::class,
             'position'     => 1399,
             'length'       => 3,
         ],
-        ' InÌcio do calculo da contribuicao fixa sobre 1 salario mÌnimo' => [
+        'contr_sobre_sal_min_data' => [
             'format'       => FieldC::class,
             'position'     => 1402,
             'length'       => 10,
         ],
-        'Atividade para o simples nacional' => [
+        'simples_072007' => [
             'format'       => FieldC::class,
             'position'     => 1412,
             'length'       => 3,
         ],
-        ' DATA PARA CALCULAR OS AFASTAMENTOS POR COMPETENCIA' => [
+        'DATA_CALC_AFASTAMENTOS' => [
             'format'       => FieldC::class,
             'position'     => 1415,
             'length'       => 10,
         ],
-        'CODIGO DO AFASTAMENTO DA ULTIMA SITUACAO DO EMPREGADO' => [
+        'I_AFASTAMENTOS' => [
             'format'       => FieldC::class,
             'position'     => 1425,
             'length'       => 7,
         ],
-        'ALVARA JUDICIAL USADO NA RAIS PARA CELETISTAS MENORES DE 16 ANOS' => [
+        'ALVARA_JUDICIAL' => [
             'format'       => FieldC::class,
             'position'     => 1432,
             'length'       => 7,
         ],
-        '** SEM USO ** Codigo da operadora de plano de saude ' => [
+        'I_OPERADORAPLANOSAUDE' => [
             'format'       => FieldC::class,
             'position'     => 1439,
             'length'       => 7,
         ],
-        '** SEM USO ** Optante plano de saude: ' => [
+        'PLANO_SAUDE_OPTANTES' => [
             'format'       => FieldC::class,
             'position'     => 1446,
             'length'       => 7,
         ],
-        'Optante plano de saude' => [
+        'OPCAO_PLANO_SAUDE' => [
             'format'       => FieldC::class,
             'position'     => 1453,
             'length'       => 7,
         ],
-        'Clausula assecuratoria de direito recÌproco de rescisao antecipada' => [
+        'TIPO_CLA_ASSEC_DIR_REC_RES_ANT' => [
             'format'       => FieldC::class,
             'position'     => 1460,
             'length'       => 7,
         ],
-        ' Tipo de Conta:' => [
+        'TIPO_CONTA' => [
             'format'       => FieldC::class,
             'position'     => 1467,
             'length'       => 7,
         ],
-        'Data de reintegracao ' => [
+        'DATA_REINTEGRACAO' => [
             'format'       => FieldC::class,
             'position'     => 1474,
             'length'       => 10,
         ],
-        'Tipo de inscricao da filial de origem:' => [
+        'TIPO_INSCRICAO_FILIAL_ORIGEM' => [
             'format'       => FieldC::class,
             'position'     => 1484,
             'length'       => 7,
         ],
-        'Inscricao da filial de origem' => [
+        'INSCRICAO_FILIAL_ORIGEM' => [
             'format'       => FieldC::class,
             'position'     => 1491,
             'length'       => 14,
         ],
-        'MatrÌcula na empresa origem' => [
+        'MATRICULA_ORIGEM' => [
             'format'       => FieldC::class,
             'position'     => 1505,
             'length'       => 20,
         ],
-        'Nome da empresa de origem' => [
+        'NOME_EMPRESA_ORIGEM' => [
             'format'       => FieldC::class,
             'position'     => 1525,
             'length'       => 40,
         ],
-        'E-mail' => [
+        'EMAIL' => [
             'format'       => FieldC::class,
             'position'     => 1565,
             'length'       => 60,
         ],
-        'Numero processo MTE ' => [
+        'NUMERO_PROCESSO_MTE' => [
             'format'       => FieldC::class,
             'position'     => 1625,
             'length'       => 30,
         ],
-        'Data da chegada' => [
+        'DATA_CHEGADA' => [
             'format'       => FieldC::class,
             'position'     => 1655,
             'length'       => 10,
         ],
-        'Data da naturalizacao' => [
+        'DATA_NATURALIZACAO' => [
             'format'       => FieldC::class,
             'position'     => 1665,
             'length'       => 10,
         ],
-        'Casado com brasileiro' => [
+        'CASADO_BRASILEIRO' => [
             'format'       => FieldC::class,
             'position'     => 1675,
             'length'       => 7,
         ],
-        'Filhos com brasileiro' => [
+        'FILHOS_BRASILEIRO' => [
             'format'       => FieldC::class,
             'position'     => 1682,
             'length'       => 7,
         ],
-        'Numero de identificacao fiscal ' => [
+        'NIF' => [
             'format'       => FieldC::class,
             'position'     => 1689,
             'length'       => 30,
         ],
-        'Numero RIC ' => [
+        'NUMERO_RIC' => [
             'format'       => FieldC::class,
             'position'     => 1719,
             'length'       => 15,
         ],
-        'Orgao emissor RIC ' => [
+        'ORGAO_EMISSOR_RIC' => [
             'format'       => FieldC::class,
             'position'     => 1734,
             'length'       => 8,
         ],
-        'Local RIC ' => [
+        'LOCAL_RIC' => [
             'format'       => FieldC::class,
             'position'     => 1742,
             'length'       => 40,
         ],
-        'Data expedicao RIC' => [
+        'DATA_EXPEDICAO_RIC' => [
             'format'       => FieldC::class,
             'position'     => 1782,
             'length'       => 10,
         ],
-        'Data validade RIC' => [
+        'DATA_VALIDADE_RIC' => [
             'format'       => FieldC::class,
             'position'     => 1792,
             'length'       => 10,
         ],
-        'DÌgito da conta de pagamento ' => [
+        'DIGITO_CONTA_PAGAMENTO' => [
             'format'       => FieldC::class,
             'position'     => 1802,
             'length'       => 2,
         ],
-        'Residente ou domiciliado no exterior:' => [
+        'RESIDENTE_EXTERIOR' => [
             'format'       => FieldC::class,
             'position'     => 1804,
             'length'       => 7,
         ],
-        'Tipo de endereco' => [
+        'TIPO_ENDERECO' => [
             'format'       => FieldC::class,
             'position'     => 1811,
             'length'       => 7,
         ],
-        ' Codigo do municÌpio do endereco' => [
+        'MUNICIPIO_ENDERECO' => [
             'format'       => FieldC::class,
             'position'     => 1818,
             'length'       => 7,
         ],
-        'Codigo do municÌpio do local de nascimento' => [
+        'MUNICIPIO_NASCIMENTO' => [
             'format'       => FieldC::class,
             'position'     => 1825,
             'length'       => 7,
         ],
-        'Codigo do paÌs do endereco' => [
+        'PAIS_ENDERECO' => [
             'format'       => FieldC::class,
             'position'     => 1832,
             'length'       => 7,
         ],
-        'Codigo do paÌs de nascimento' => [
+        'PAIS_NASCIMENTO' => [
             'format'       => FieldC::class,
             'position'     => 1839,
             'length'       => 7,
         ],
-        'Beneficiado pelo PAT: ' => [
+        'BENEFICIADO_PAT' => [
             'format'       => FieldC::class,
             'position'     => 1846,
             'length'       => 7,
         ],
-        'Tipo de calculo da contribuicao fixa sobre 1 salario mÌnimo:' => [
+        'CONTR_SOBRE_SAL_MIN_TIPO' => [
             'format'       => FieldC::class,
             'position'     => 1853,
             'length'       => 7,
         ],
-        'Recolher a competencia de novembro e 13º integral em uma unica GPS' => [
+        'GPS_CONJUNTA_NOVEMBRO_13_INTEGRAL' => [
             'format'       => FieldC::class,
             'position'     => 1860,
             'length'       => 7,
         ],
-        'InÌcio do recolhimento da competencia de novembro e 13º integral em uma unica GPS.' => [
+        'GPS_CONJUNTA_NOVEMBRO_13_INTEGRAL_INICIO' => [
             'format'       => FieldC::class,
             'position'     => 1867,
             'length'       => 10,
         ],
-         'Beneficiado pelo PAT por servico proprio.' => [
+         'BENEFICIADO_PAT_SERVICO_PROPRIO' => [
             'format'       => FieldC::class,
             'position'     => 1877,
             'length'       => 7,
         ],
-         'Beneficiado pelo PAT por administracao de cozinhas.' => [
+         'BENEFICIADO_PAT_ADMINISTRACAO_COZINHAS' => [
             'format'       => FieldC::class,
             'position'     => 1884,
             'length'       => 7,
         ],
-         'Beneficiado pelo PAT por convenio de refeicao.' => [
+         'BENEFICIADO_PAT_ALIMENTACAO_CONVENIO' => [
             'format'       => FieldC::class,
             'position'     => 1891,
             'length'       => 7,
         ],
-         'Beneficiado pelo PAT por transporte de refeicao.' => [
+         'BENEFICIADO_PAT_REFEICOES_TRANSPORTADAS' => [
             'format'       => FieldC::class,
             'position'     => 1898,
             'length'       => 7,
         ],
-         'Beneficiado pelo PAT por cesta de alimentos.' => [
+         'BENEFICIADO_PAT_CESTA_ALIMENTOS' => [
             'format'       => FieldC::class,
             'position'     => 1905,
             'length'       => 7,
         ],
-         'Beneficiado pelo PAT por convenio de alimentacao.' => [
+         'BENEFICIADO_PAT_ALIMENTACAO_CONVENIO' => [
             'format'       => FieldC::class,
             'position'     => 1912,
             'length'       => 7,
         ],
-         'Atividade por conta propria ' => [
+         'ATIVIDADE_CONTA_PROPRIA_RURAL' => [
             'format'       => FieldC::class,
             'position'     => 1919,
             'length'       => 7,
         ],
-         'Numero do passaporte.' => [
+         'NUMERO_PASSAPORTE' => [
             'format'       => FieldC::class,
             'position'     => 1926,
             'length'       => 20,
         ],
-         'Emissor do passaporte' => [
+         'EMISSOR_PASSAPORTE' => [
             'format'       => FieldC::class,
             'position'     => 1946,
             'length'       => 7,
         ],
-        'UF do passaporte' => [
+        'UF_PASSAPORTE' => [
             'format'       => FieldC::class,
             'position'     => 1953,
             'length'       => 2,
         ],
-        'Data de emissao do passaporte' => [
+        'DATA_EMISSAO_PASSAPORTE' => [
             'format'       => FieldC::class,
             'position'     => 1955,
             'length'       => 10,
         ],
-        'Data de validade do passaporte' => [
+        'DATA_VALIDADE_PASSAPORTE' => [
             'format'       => FieldC::class,
             'position'     => 1965,
             'length'       => 10,
         ],
-        'Codigo do paÌs do passaporte' => [
+        'PAIS_PASSAPORTE' => [
             'format'       => FieldC::class,
             'position'     => 1975,
             'length'       => 7,
         ],
-        'Tipo de indicativo da admissao' => [
+        'TIPO_INDICATIVO_ADMISSAO' => [
             'format'       => FieldC::class,
             'position'     => 1982,
             'length'       => 7,
         ],
-        'Nome do municÌpio para residente no exterior' => [
+        'NOME_MUNICIPIO_RESIDENTE_EXTERIOR' => [
             'format'       => FieldC::class,
             'position'     => 1989,
             'length'       => 255,
         ],
-        'Codigo do paÌs da nacionalidade' => [
+        'PAIS_NACIONALIDADE' => [
             'format'       => FieldC::class,
             'position'     => 2244,
             'length'       => 7,
         ],
-        'Data de expedicao da carteira de motorista.' => [
+        'DATA_EXPEDICAO_CNH' => [
             'format'       => FieldC::class,
             'position'     => 2251,
             'length'       => 10,
         ],
-        'Orgao emissor da carteira de motorista' => [
+        'ORGAO_EMISSOR_CNH' => [
             'format'       => FieldC::class,
             'position'     => 2261,
             'length'       => 20,
         ],
-        'Codigo postal' => [
+        'CODIGO_POSTAL' => [
             'format'       => FieldC::class,
             'position'     => 2281,
             'length'       => 10,
         ],
-        'Possui residencia propria' => [
+        'RESIDENCIA_PROPRIA' => [
             'format'       => FieldC::class,
             'position'     => 2291,
             'length'       => 7,
         ],
-        'Adquiriu imovel com recursos do FGTS' => [
+        'IMOVEL_ADQUIRIDO_RECURSOS_FGTS' => [
             'format'       => FieldC::class,
             'position'     => 2298,
             'length'       => 7,
         ],
-        'E-mail alternativo' => [
+        'EMAIL_ALTERNATIVO' => [
             'format'       => FieldC::class,
             'position'     => 2305,
             'length'       => 60,
         ],
-        'Tipo de processo do alvar' => [
+        'TIPO_PROCESSO_ALVARA' => [
             'format'       => FieldC::class,
             'position'     => 2365,
             'length'       => 7,
         ],
-        'Autoria do alvar' => [
+        'AUTORIA_ALVARA' => [
             'format'       => FieldC::class,
             'position'     => 2372,
             'length'       => 7,
         ],
-        'Numero do alvar' => [
+        'NUMERO_ALVARA' => [
             'format'       => FieldC::class,
             'position'     => 2379,
             'length'       => 20,
         ],
-        'Indicativo de decisao do alvar' => [
+        'INDICATIVO_DECISAO_ALVARA' => [
             'format'       => FieldC::class,
             'position'     => 2399,
             'length'       => 7,
         ],
-        'Data de decisao do alvar' => [
+        'DATA_DECISAO_ALVARA' => [
             'format'       => FieldC::class,
             'position'     => 2406,
             'length'       => 10,
         ],
-        'Montante integral do alvar' => [
+        'MONTANTE_INTEGRAL_DEPOSITADO_ALVARA' => [
             'format'       => FieldC::class,
             'position'     => 2416,
             'length'       => 7,
         ],
-        'InicÌo da vigencia do alvar' => [
+        'INICIO_VIGENCIA_ALVARA' => [
             'format'       => FieldC::class,
             'position'     => 2423,
             'length'       => 10,
         ],
-        'Fim da vigencia do alvar' => [
+        'FIM_VIGENCIA_ALVARA' => [
             'format'       => FieldC::class,
             'position'     => 2433,
             'length'       => 10,
         ],
-        'Identificacao do alvara' => [
+        'IDENTIFICACAO_ALVARA' => [
             'format'       => FieldC::class,
             'position'     => 2443,
             'length'       => 2,
         ],
-        'Codigo do municÌpio do alvar' => [
+        'CODIGO_MUNICIPIO_ALVARA' => [
             'format'       => FieldC::class,
             'position'     => 2445,
             'length'       => 7,
         ],
-        'Possui deficiencia.' => [
+        'POSSUI_DEFICIENCIA' => [
             'format'       => FieldC::class,
             'position'     => 2452,
             'length'       => 7,
         ],
-        'Possui deficiencia motora' => [
+        'POSSUI_DEFICIENCIA_MOTORA' => [
             'format'       => FieldC::class,
             'position'     => 2459,
             'length'       => 7,
         ],
-        'Possui deficiencia visual' => [
+        'POSSUI_DEFICIENCIA_VISUAL' => [
             'format'       => FieldC::class,
             'position'     => 2466,
             'length'       => 7,
         ],
-        'Possui deficiencia auditiva' => [
+        'POSSUI_DEFICIENCIA_AUDITIVA' => [
             'format'       => FieldC::class,
             'position'     => 2473,
             'length'       => 7,
         ],
-        'Possui outras deficiencias' => [
+        'POSSUI_DEFICIENCIA_OUTRAS' => [
             'format'       => FieldC::class,
             'position'     => 2480,
             'length'       => 7,
         ],
-        'Possui deficiencia reabilitado' => [
+        'POSSUI_DEFICIENCIA_REABILITADO' => [
             'format'       => FieldC::class,
             'position'     => 2487,
             'length'       => 7,
         ],
-        'Observacao sobre a deficiencia.' => [
+        'OBSERVACAO_DEFICIENCIA' => [
             'format'       => FieldC::class,
             'position'     => 2494,
             'length'       => 255,
         ],
-        'Codigo da funcao' => [
+        'I_FUNCAO' => [
             'format'       => FieldC::class,
             'position'     => 2749,
             'length'       => 7,
         ],
-        'Numero do registro nacional de estrangeiros.' => [
+        'NUMERO_RNE' => [
             'format'       => FieldC::class,
             'position'     => 2756,
             'length'       => 15,
         ],
-        'Data de expedicao do registro nacional de estrangeiros' => [
+        'DATA_EXPEDICAO_RNE' => [
             'format'       => FieldC::class,
             'position'     => 2771,
             'length'       => 10,
         ],
-        'Orgao emissor do registro nacional de estrangeiros.' => [
+        'ORGAO_EMISSOR_RNE' => [
             'format'       => FieldC::class,
             'position'     => 2781,
             'length'       => 20,
         ],
-        'Endereco comercial' => [
+        'ENDERECO_COMERCIAL' => [
             'format'       => FieldC::class,
             'position'     => 2801,
             'length'       => 7,
         ],
-        'Codigo do processo.' => [
+        'I_PROCESSO' => [
             'format'       => FieldC::class,
             'position'     => 2808,
             'length'       => 7,
         ],
-        'Codigo da solicitacao de cadastro de empregado do DomÌnio Atendimento.' => [
+        'CODIGO_SCE_DOMINIO_ATENDIMENTO' => [
             'format'       => FieldC::class,
             'position'     => 2815,
             'length'       => 7,
         ],
-        'Codigo da instituicao de ensino do estagiario' => [
+        'I_INSTITUICAO_ENSINO' => [
             'format'       => FieldC::class,
             'position'     => 2822,
             'length'       => 7,
         ],
-        'Codigo do agente de integracao do estagiario' => [
+        'I_AGENTES_INTEGRACAO' => [
             'format'       => FieldC::class,
             'position'     => 2829,
             'length'       => 7,
         ],
-        'Codigo do coordenador de estagio do estagiario' => [
+        'I_COORDENADOR_ESTAGIO' => [
             'format'       => FieldC::class,
             'position'     => 2836,
             'length'       => 7,
