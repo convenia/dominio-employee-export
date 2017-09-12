@@ -908,7 +908,7 @@ class EmployeeRegistry extends Registry
             'position'     => 1884,
             'length'       => 7,
         ],
-         'BENEFICIADO_PAT_ALIMENTACAO_CONVENIO' => [
+         'BENEFICIADO_PAT_REFEICAO_CONVENIO' => [
             'format'       => FieldC::class,
             'position'     => 1891,
             'length'       => 7,
@@ -1143,272 +1143,272 @@ class EmployeeRegistry extends Registry
             'position'     => 2836,
             'length'       => 7,
         ],
-        '£rea de atuacao do estagiario.' => [
+        'AREA_ATUACAO_ESTAGIARIO' => [
             'format'       => FieldC::class,
             'position'     => 2843,
             'length'       => 50,
         ],
-        'Natureza do estagio' => [
+        'NATUREZA_ESTAGIO' => [
             'format'       => FieldC::class,
             'position'     => 2893,
             'length'       => 7,
         ],
-        'NÌvel do estagio' => [
+        'NIVEL_ESTAGIO' => [
             'format'       => FieldC::class,
             'position'     => 2900,
             'length'       => 7,
         ],
-        'Apolice de seguro do estagiario.' => [
+        'APOLICE_SEGURO_ESTAGIARIO' => [
             'format'       => FieldC::class,
             'position'     => 2907,
             'length'       => 30,
         ],
-        'Possui deficiencia mental.' => [
+        'POSSUI_DEFICIENCIA_MENTAL' => [
             'format'       => FieldC::class,
             'position'     => 2937,
             'length'       => 7,
         ],
-        'Codigo da jornada.' => [
+        'I_JORNADA' => [
             'format'       => FieldC::class,
             'position'     => 2944,
             'length'       => 7,
         ],
-        'Situacao da qualificacao cadastral para o INSS e a Receita Federal' => [
+        'SITUACAO_QUALIFICACAO_CADASTRAL_INSS_RECEITA' => [
             'format'       => FieldC::class,
             'position'     => 2951,
             'length'       => 7,
         ],
-        'Caixa postal.' => [
+        'CAIXA_POSTAL' => [
             'format'       => FieldC::class,
             'position'     => 2958,
             'length'       => 10,
         ],
-        'CEP da caixa postal.' => [
+        'CEP_CAIXA_POSTAL' => [
             'format'       => FieldC::class,
             'position'     => 2968,
             'length'       => 8,
         ],
-        '** SEM USO ** (MOTIVO_CONTRATACAO_TRABALHO_TEMPORARIO)' => [
+        'MOTIVO_CONTRATACAO_TRABALHO_TEMPORARIO' => [
             'format'       => FieldC::class,
             'position'     => 2976,
             'length'       => 7,
         ],
-        '* SEM USO ** (NOME_TRABALHADOR_SUBSTITUIDO_TRABALHO_TEMPORARIO)' => [
+        'NOME_TRABALHADOR_SUBSTITUIDO_TRABALHO_TEMPORARIO' => [
             'format'       => FieldC::class,
             'position'     => 2983,
             'length'       => 100,
         ],
-        '** SEM USO ** (CPF_TRABALHADOR_SUBSTITUIDO_TRABALHO_TEMPORARIO)' => [
+        'CPF_TRABALHADOR_SUBSTITUIDO_TRABALHO_TEMPORARIO' => [
             'format'       => FieldC::class,
             'position'     => 3083,
             'length'       => 11,
         ],
-        '** SEM USO ** (MATRICULA_TRABALHADOR_SUBSTITUIDO_TRABALHO_TEMPORARIO)' => [
+        'MATRICULA_TRABALHADOR_SUBSTITUIDO_TRABALHO_TEMPORARIO' => [
             'format'       => FieldC::class,
             'position'     => 3094,
             'length'       => 30,
         ],
-        'Tipo de horario.' => [
+        'TIPO_HORARIO' => [
             'format'       => FieldC::class,
             'position'     => 3124,
             'length'       => 7,
         ],
-        'Codigo no eSocial' => [
+        'CODIGO_ESOCIAL' => [
             'format'       => FieldC::class,
             'position'     => 3131,
             'length'       => 30,
         ],
-        'Codigo da remuneracao variavel' => [
+        'I_REMUNERACAO_VARIAVEL' => [
             'format'       => FieldC::class,
             'position'     => 3161,
             'length'       => 7,
         ],
-        'Codigo do processo administrativo/judicial de reintegracao.' => [
+        'I_PROCESSO_REINTEGRACAO' => [
             'format'       => FieldC::class,
             'position'     => 3168,
             'length'       => 7,
         ],
-        'Possui reducao na alÌquota de INSS.' => [
+        'POSSUI_REDUCAO_ALIQUOTA_INSS' => [
             'format'       => FieldC::class,
             'position'     => 3175,
             'length'       => 7,
         ],
-        'Competencia da reducao na alÌquota de INSS' => [
+        'POSSUI_REDUCAO_ALIQUOTA_INSS_COMPETENCIA' => [
             'format'       => FieldC::class,
             'position'     => 3182,
             'length'       => 10,
         ],
-        'Quantidade de dias do contrato de experiencia.' => [
+        'QUANTIDADE_DIAS_CONTRATO_EXPERIENCIA' => [
             'format'       => FieldC::class,
             'position'     => 3192,
             'length'       => 7,
         ],
-        'Quantidade de dias da prorrogacao do contrato de experiencia.' => [
+        'QUANTIDADE_DIAS_PRORROGACAO_CONTRATO_EXPERIENCIA' => [
             'format'       => FieldC::class,
             'position'     => 3199,
             'length'       => 7,
         ],
-        'Recebia seguro desemprego.' => [
+        'RECEBIA_SEGURO_DESEMPREGO' => [
             'format'       => FieldC::class,
             'position'     => 3206,
             'length'       => 7,
         ],
-        'Natureza trabalho autonomo' => [
+        'NATUREZA_TRABALHO_AUTONOMO' => [
             'format'       => FieldC::class,
             'position'     => 3213,
             'length'       => 7,
         ],
-        'DDD do telefone 1.' => [
+        'DDD_FONE' => [
             'format'       => FieldC::class,
             'position'     => 3220,
             'length'       => 3,
         ],
-        'DDD do contato 1' => [
+        'DDD_FONE2' => [
             'format'       => FieldC::class,
             'position'     => 3223,
             'length'       => 3,
         ],
-        'DDD do celular' => [
+        'DDD_CELULAR' => [
             'format'       => FieldC::class,
             'position'     => 3226,
             'length'       => 3,
         ],
-        'Numero do celular' => [
+        'CELULAR' => [
             'format'       => FieldC::class,
             'position'     => 3229,
             'length'       => 11,
         ],
-        'DDD do contato 2' => [
+        'DDD_CONTATO_2' => [
             'format'       => FieldC::class,
             'position'     => 3240,
             'length'       => 3,
         ],
-        'Numero do contato 2' => [
+        'CONTATO_2' => [
             'format'       => FieldC::class,
             'position'     => 3243,
             'length'       => 11,
         ],
-        'Inscricao municipal de autonomo' => [
+        'INSCRICAO_MUNICIPAL_AUTONOMO' => [
             'format'       => FieldC::class,
             'position'     => 3254,
             'length'       => 20,
         ],
-        'Regime de casamento.' => [
+        'REGIME_CASAMENTO' => [
             'format'       => FieldC::class,
             'position'     => 3274,
             'length'       => 7,
         ],
-        'Dirigente sindical.' => [
+        'DIRIGENTE_SINDICAL' => [
             'format'       => FieldC::class,
             'position'     => 3281,
             'length'       => 7,
         ],
-        'CNPJ da empresa origem do dirigente sindical.' => [
+        'CNPJ_EMPRESA_ORIGEM_DIRIGENTE' => [
             'format'       => FieldC::class,
             'position'     => 3288,
             'length'       => 14,
         ],
-        'Nome da empresa origem do dirigente sindical' => [
+        'NOME_EMPRESA_ORIGEM_DIRIGENTE' => [
             'format'       => FieldC::class,
             'position'     => 3302,
             'length'       => 100,
         ],
-        'Categoria origem do dirigente sindical' => [
+        'CATEGORIA_ORIGEM_DIRIGENTE_SINDICAL' => [
             'format'       => FieldC::class,
             'position'     => 3402,
             'length'       => 7,
         ],
-        'Data de admissao na empresa origem do dirigente sindical.' => [
+        'DATA_ADMISSAO_EMPRESA_ORIGEM_DIRIGENTE_SINDICAL' => [
             'format'       => FieldC::class,
             'position'     => 3409,
             'length'       => 10,
         ],
-        'MatrÌcula na empresa origem do dirigente sindical' => [
+        'MATRICULA_EMPRESA_ORIGEM_DIRIGENTE_SINDICAL' => [
             'format'       => FieldC::class,
             'position'     => 3419,
             'length'       => 30,
         ],
-        'Responsavel pela remuneracao do dirigente sindical.' => [
+        'RESPONSAVEL_REMUNERACAO_DIRIGENTE_SINDICAL' => [
             'format'       => FieldC::class,
             'position'     => 3449,
             'length'       => 7,
         ],
-        'Tipo de remuneracao do dirigente sindical' => [
+        'TIPO_REMUNERACAO_DIRIGENTE_SINDICAL' => [
             'format'       => FieldC::class,
             'position'     => 3456,
             'length'       => 7,
         ],
-        'Data de inÌcio do pagamento do adicional para o dirigente sindical.' => [
+        'DATA_INICIO_PAGAMENTO_ADICIONAL_DIRIGENTE_SINDICAL' => [
             'format'       => FieldC::class,
             'position'     => 3463,
             'length'       => 10,
         ],
-        'Remuneracao do sindicato do dirigente sindical.' => [
+        'REMUNERACAO_SINDICATO_DIRIGENTE_SINDICAL' => [
             'format'       => FieldC::class,
             'position'     => 3473,
             'length'       => 17,
         ],
-        'Remuneracao da empresa do dirigente sindical.' => [
+        'REMUNERACAO_EMPRESA_DIRIGENTE_SINDICAL' => [
             'format'       => FieldC::class,
             'position'     => 3490,
             'length'       => 17,
         ],
-        'Orgao de expedicao da RG' => [
+        'ORGAO_EXPEDICAO_RG' => [
             'format'       => FieldC::class,
             'position'     => 3507,
             'length'       => 7,
         ],
-        'Forma de pagamento' => [
+        'FORMA_CALCULO' => [
             'format'       => FieldC::class,
             'position'     => 3514,
             'length'       => 7,
         ],
-        'Usa salario mÌnimo estadual.' => [
+        'USA_SALARIO_MINIMO_ESTADUAL' => [
             'format'       => FieldC::class,
             'position'     => 3521,
             'length'       => 7,
         ],
-        'Codigo sequencial da tabela de salario mÌnimo estadual.' => [
+        'I_TABCALC_SALARIO_MINIMO_ESTADUAL' => [
             'format'       => FieldC::class,
             'position'     => 3528,
             'length'       => 7,
         ],
-        'Codigo da categoria da tabela de salario mÌnimo estadual.' => [
+        'I_CATEGORIA_TAB_SALARIO_MINIMO_ESTADUAL' => [
             'format'       => FieldC::class,
             'position'     => 3535,
             'length'       => 7,
         ],
-        'Empresa origem desonerada.' => [
+        'EMPRESA_ORIGEM_DESONERADA' => [
             'format'       => FieldC::class,
             'position'     => 3542,
             'length'       => 7,
         ],
-        'Remuneracoes e respectivas contribuicoes referentes ao periodo entre o desligamento e a reintegraÃßÃ£o pagas em juizo.' => [
+        'REMUNERACOES_RESPECTIVAS_CONTRIBUICOES_REFERENTES_PERIODO_DESLIGAMENTO_REINTRAGACAO_PAGAS_JUIZO' => [
             'format'       => FieldC::class,
             'position'     => 3549,
             'length'       => 7,
         ],
-        'Codigo do municÌpio do RIC.' => [
+        'CODIGO_MUNICIPIO_RIC' => [
             'format'       => FieldC::class,
             'position'     => 3556,
             'length'       => 7,
         ],
-        'UF da carteira de motorista.' => [
+        'CODIGO_UF_CARTEIRA_MOTORISTA' => [
             'format'       => FieldC::class,
             'position'     => 3563,
             'length'       => 7,
         ],
-        'Data da primeira habilitacao.' => [
+        'DATA_PRIMEIRA_HABILITACAO_CARTEIRA_MOTORISTA' => [
             'format'       => FieldC::class,
             'position'     => 3570,
             'length'       => 10,
         ],
-        'Brasileiro nascido no exterior.' => [
+        'BRASILEIRO_NASCIDO_EXTERIOR' => [
             'format'       => FieldC::class,
             'position'     => 3580,
             'length'       => 7,
         ],
-        'Calcular INSS Patronal.' => [
+        'CALCULAR_INSS_PATRONAL' => [
             'format'       => FieldC::class,
             'position'     => 3587,
             'length'       => 7,
