@@ -16,7 +16,7 @@ class FieldC extends Field
      */
     public function format()
     {
-        $this->value = $this->value->slugify(' ')->toTitleCase();
+        $this->value = $this->value->toTitleCase();
         $actualLength = $this->value->length();
         $this->value = $this->value->truncate($this->getLength());
 
