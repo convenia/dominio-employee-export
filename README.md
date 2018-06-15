@@ -1,6 +1,6 @@
 # Dominio Employee Export
 
-Classe para exportar dados de funcionários de sua empresa para o padrão aceito no software de folha [Domínio Sistemas](http://www.dominiosistemas.com.br/)
+Pacote para exportar dados de funcionários de sua empresa para o padrão aceito no software de folha [Domínio Sistemas](http://www.dominiosistemas.com.br/)
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/48adc7e8c5c04929ad0bd01d9ce465e2)](https://www.codacy.com/app/Convenia/dominio-employee-export?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=convenia/dominio-employee-export&amp;utm_campaign=Badge_Grade)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/96b25a25-8634-4a6b-80f4-89867a6220cd/mini.png)](https://insight.sensiolabs.com/projects/96b25a25-8634-4a6b-80f4-89867a6220cd)
@@ -8,7 +8,7 @@ Classe para exportar dados de funcionários de sua empresa para o padrão aceito
 
 ## Requisitos
 
-* PHP >= 5.6
+- PHP >= 5.6
 
 ### Instale usando o [composer](http://getcomposer.org/)
 
