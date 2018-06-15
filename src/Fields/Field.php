@@ -36,6 +36,14 @@ abstract class Field implements FieldInterface
     }
 
     /**
+     * @return string
+     */
+    public function __toString()
+    {
+        return $this->getValue();
+    }
+
+    /**
      * @param $value
      *
      * @throws \InvalidArgumentException
@@ -97,13 +105,5 @@ abstract class Field implements FieldInterface
     public function getPosition()
     {
         return $this->position;
-    }
-
-    /**
-     * @return string
-     */
-    public function __toString()
-    {
-        return $this->getValue();
     }
 }

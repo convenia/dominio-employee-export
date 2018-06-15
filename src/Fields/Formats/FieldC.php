@@ -12,7 +12,7 @@ class FieldC extends Field
     /**
      * Return the formatted field.
      *
-     * @return \Stringy\Stringy|static
+     * @return static|\Stringy\Stringy
      */
     public function format()
     {

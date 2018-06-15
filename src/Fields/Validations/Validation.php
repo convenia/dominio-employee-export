@@ -34,7 +34,7 @@ class Validation
     public function make(array $rules)
     {
         foreach ($rules as $ruleIndex => $rule) {
-            if (!isset($rule['rules'])) {
+            if (! isset($rule['rules'])) {
                 continue;
             }
 
@@ -50,13 +50,13 @@ class Validation
      */
     public function validate(array $data)
     {
-        if (count($this->rules) === 0) {
+        if (0 === count($this->rules)) {
             return;
         }
 
         foreach ($this->rules as $ruleIndex => $rules) {
             foreach ($rules as $rule) {
-                if (strpos($rule, ':') !== false) {
+                if (false !== strpos($rule, ':')) {
                     list($composeRuleIndex, $composeRuleParams) = explode(':', $rule);
 
                     $methodName = Stringy::create($composeRuleIndex);
@@ -67,6 +67,7 @@ class Validation
                     $valid = $this->{'validate'.$methodName}($data, $ruleIndex, $composeRuleParams);
 
                     $this->shouldStop($valid, $composeRuleIndex, $ruleIndex, $data);
+
                     continue;
                 }
 
@@ -78,6 +79,14 @@ class Validation
                 $this->shouldStop($valid, $rule, $ruleIndex, $data);
             }
         }
+    }
+
+    /**
+     * @return bool
+     */
+    public function isValid()
+    {
+        return $this->valid;
     }
 
     /**
@@ -123,7 +132,7 @@ class Validation
      */
     protected function methodExists($methodName)
     {
-        if (method_exists($this, 'validate'.$methodName) === false) {
+        if (false === method_exists($this, 'validate'.$methodName)) {
             throw new ValidatorInvalidRuleException($methodName);
         }
     }
@@ -138,20 +147,12 @@ class Validation
      */
     protected function shouldStop($state, $rule, $field, $data = null)
     {
-        if (isset($data[$field]) === false) {
+        if (false === isset($data[$field])) {
             $data[$field] = '';
         }
 
-        if ($state === false) {
+        if (false === $state) {
             throw new ValidatorException('Rule "'.$rule.'" fails for field '.$field.'"'.$data[$field].'"');
         }
-    }
-
-    /**
-     * @return bool
-     */
-    public function isValid()
-    {
-        return $this->valid;
     }
 }

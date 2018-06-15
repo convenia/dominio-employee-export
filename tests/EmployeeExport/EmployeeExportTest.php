@@ -11,19 +11,17 @@ class EmployeeExportTest extends BaseTest
 {
     public function test_generate_file_to_import()
     {
+        // Arrange
         $employeeExport = new EmployeeExport();
 
-        $fileContents = $employeeExport
-                    ->employees([
-                        [
-                            'name' => 'Vincent Vega',
-                        ],
-                    ])
-                    ->generate();
+        // Act
+        $fileContents = $employeeExport->employees([
+            [
+                'nome' => 'Vincent Vega',
+            ],
+            ])->generate();
 
-        $this->assertEquals(
-            '                            Vincent Vega                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ',
-            $fileContents
-        );
+        // Assert
+        $this->stringContains('Vincent Vega', $fileContents);
     }
 }

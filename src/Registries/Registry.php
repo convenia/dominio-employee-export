@@ -65,7 +65,7 @@ abstract class Registry
         $this->fill();
 
         foreach ($fields as $field => $value) {
-            if (array_key_exists($field, $this->defaultFields) === false) {
+            if (false === array_key_exists($field, $this->defaultFields)) {
                 throw new FieldNotExistsException($field);
             }
 
@@ -74,8 +74,8 @@ abstract class Registry
 
         try {
             $this->validator->validate($fields);
-        } catch (\Convenia\Dominio\EmployeeExport\Exceptions\RegistryTooShortException $e) {
-            new RegistryTooShortException($e->getMessage().'in registry '.get_class());
+        } catch (RegistryTooShortException $e) {
+            new RegistryTooShortException($e->getMessage().'in registry '.__CLASS__);
         }
 
         $this->generate();
@@ -83,38 +83,11 @@ abstract class Registry
     }
 
     /**
-     * Fill the $values array with default and required values.
-     */
-    protected function fill()
-    {
-        foreach ($this->defaultFields as $field => $values) {
-            $defaultValue = isset($this->defaultFields[$field]['defaultValue']) ?
-                $this->defaultFields[$field]['defaultValue'] :
-                null;
-
-            $this->values[$field] = (new $this->defaultFields[$field]['format']($defaultValue))
-                ->setPosition($this->defaultFields[$field]['position'])
-                ->setLength($this->defaultFields[$field]['length']);
-        }
-    }
-
-    /**
-     * Generate the full registry string.
-     *
      * @return string
      */
-    protected function generate()
+    public function __toString()
     {
-        $this->resultString = Stringy::create('');
-
-        /*
-         * @var Field
-         */
-        foreach ($this->values as $valueName => $valueClass) {
-            $this->resultString = $this->resultString->append($valueClass->getValue());
-        }
-
-        return (string) $this->resultString;
+        return $this->generate();
     }
 
     /**
@@ -151,10 +124,35 @@ abstract class Registry
     }
 
     /**
+     * Fill the $values array with default and required values.
+     */
+    protected function fill()
+    {
+        foreach ($this->defaultFields as $field => $values) {
+            $defaultValue = isset($this->defaultFields[$field]['defaultValue']) ?
+                $this->defaultFields[$field]['defaultValue'] :
+                null;
+
+            $this->values[$field] = (new $this->defaultFields[$field]['format']($defaultValue))
+                ->setPosition($this->defaultFields[$field]['position'])
+                ->setLength($this->defaultFields[$field]['length']);
+        }
+    }
+
+    /**
+     * Generate the full registry string.
+     *
      * @return string
      */
-    public function __toString()
+    protected function generate()
     {
-        return $this->generate();
+        $this->resultString = Stringy::create('');
+
+        // @var Field
+        foreach ($this->values as $valueName => $valueClass) {
+            $this->resultString = $this->resultString->append($valueClass->getValue());
+        }
+
+        return (string) $this->resultString;
     }
 }
