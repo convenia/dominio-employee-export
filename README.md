@@ -25,6 +25,5 @@ $employees = [
     ]
 ];
 
-$dominio->employees($employees)
-        ->generate();
+$dominio->employees($employees)->generate();
 ```
