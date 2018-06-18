@@ -8,7 +8,8 @@ $dominio = new EmployeeExport;
 
 $employees = [
     [
-        'nome' => 'Vincent Vega'
+        'nacionalidade' => '',
+        'codi_emp' => ''
     ]
 ];
 
