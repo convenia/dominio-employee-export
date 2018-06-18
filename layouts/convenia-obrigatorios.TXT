@@ -1,0 +1,89 @@
+3	FOEMPREGADOS	1	nacionalidade	Nacionalidade   (nacionalidade)	integer	1	7		I		0
+3	FOEMPREGADOS	2	codi_emp	Codigo Empresa   (codi_emp)	integer	1	7		I		0
+3	FOEMPREGADOS	3	horas_semana	Horas semana   (horas_semana)	numeric	1	5		I		2
+3	FOEMPREGADOS	4	admissao	Admissao   (admissao)	date	1	10	DD/MM/YYYY	I		0
+3	FOEMPREGADOS	5	horas_mes	Horas mes   (horas_mes)	numeric	1	5		I		2
+3	FOEMPREGADOS	6	EXCLUIR_EVENTO_S_2205_RETIFICACAO	Indica se o empregado possui algum evento S-2205 sendo excluído do eSocial referente a uma retificação que excluiu a alteração.   (EXCLUIR_EVENTO_S_2205_RETIFICACAO)	smallint	1	7		I		0
+3	FOEMPREGADOS	7	IMOVEL_ADQUIRIDO_RECURSOS_FGTS	Adquiriu imóvel com recursos do FGTS. (0=Não/1=Sim)   (IMOVEL_ADQUIRIDO_RECURSOS_FGTS)	smallint	1	7		I		0
+3	FOEMPREGADOS	8	usa_sist	sistemas   (usa_sist)	smallint	1	7		I		0
+3	FOEMPREGADOS	9	data_nascimento	Data nascimento   (data_nascimento)	date	1	10	DD/MM/YYYY	I		0
+3	FOEMPREGADOS	10	venc_ferias	vencimento das ferias   (venc_ferias)	date	1	10	DD/MM/YYYY	I		0
+3	FOEMPREGADOS	11	INCLUSAO_VALIDADA_ESOCIAL_S_2205	Indica se o registro de inclusão no eSocial do evento S-2205 já foi validado. (0=Não/1=Sim)   (INCLUSAO_VALIDADA_ESOCIAL_S_2205)	smallint	1	7		I		0
+3	FOEMPREGADOS	12	EMPRESA_ORIGEM_DESONERADA	Empresa origem desonerada. (0=NÃ£o/1=Sim)   (EMPRESA_ORIGEM_DESONERADA)	smallint	1	7		I		0
+3	FOEMPREGADOS	13	DIRIGENTE_SINDICAL	Dirigente sindical. (0=Não /1=Sim)   (DIRIGENTE_SINDICAL)	smallint	1	7		I		0
+3	FOEMPREGADOS	14	BRASILEIRO_NASCIDO_EXTERIOR	Brasileiro nascido no exterior. (0=Não/1=Sim)   (BRASILEIRO_NASCIDO_EXTERIOR)	smallint	1	7		I		0
+3	FOEMPREGADOS	15	OPCAO_PLANO_SAUDE	Optante plano de saúde: 0=Não/1=Sim   (OPCAO_PLANO_SAUDE)	smallint	1	7		I		0
+3	FOEMPREGADOS	16	i_depto	Departamento   (i_depto)	integer	1	7		I		0
+3	FOEMPREGADOS	17	ENVIAR_ESOCIAL	Enviar para o eSocial. (0=Não/1=Sim)   (ENVIAR_ESOCIAL)	smallint	1	7		I		0
+3	FOEMPREGADOS	18	sai_rais	Sai da RAIS   (sai_rais)	char	1	1		I		0
+3	FOEMPREGADOS	19	BENEFICIADO_PAT_ALIMENTACAO_CONVENIO	Beneficiado pelo PAT por convênio de alimentação. (0=Não/1=Sim)   (BENEFICIADO_PAT_ALIMENTACAO_CONVENIO)	smallint	1	7		I		0
+3	FOEMPREGADOS	20	DESCONTAR_CONTRIBUICAO_SINDICAL_A_PARTIR_11_2017	Descontar contribuição sindical a partir de 11/2017. (0=Não/1=Sim)   (DESCONTAR_CONTRIBUICAO_SINDICAL_A_PARTIR_11_2017)	smallint	1	7		I		0
+3	FOEMPREGADOS	21	cor	Raca/Cor   (cor)	smallint	1	7		I		0
+3	FOEMPREGADOS	22	GERAR_RETIFICACAO_ESOCIAL_S_2205	Gerar retificação do evento S-2205 para o eSocial. (0=Não/1=Sim)   (GERAR_RETIFICACAO_ESOCIAL_S_2205)	smallint	1	7		I		0
+3	FOEMPREGADOS	23	tipo_contrib	tipo_contrib   (tipo_contrib)	char	1	1		I		0
+3	FOEMPREGADOS	24	CALCULAR_ADIANTAMENTO_SALARIAL	Calcular adiantamento salarial. (0=NÃ£o/1=Sim)   (CALCULAR_ADIANTAMENTO_SALARIAL)	smallint	1	7		I		0
+3	FOEMPREGADOS	25	BENEFICIADO_PAT	Beneficiado pelo PAT: (0=Não/1=Sim)   (BENEFICIADO_PAT)	smallint	1	7		I		0
+3	FOEMPREGADOS	26	i_filiais	Codigo Filial   (i_filiais)	integer	1	7		I		0
+3	FOEMPREGADOS	27	origem_reg	Origem do registro 0 - Sistema, 1 - Imp. Tabelas, 2 - Imp. Layout, 3- Imp. Tabelas Concorrentes   (origem_reg)	tinyint	1	3		I		0
+3	FOEMPREGADOS	28	gps_trimestral	GPS Trimestral   (gps_trimestral)	tinyint	1	3		I		0
+3	FOEMPREGADOS	29	paga_contr_sind	Pagou contr. sindical?   (paga_contr_sind)	char	1	1		I		0
+3	FOEMPREGADOS	30	PAGA_CONTR_SIND_11_2017	Pagou contr. sindical após 11/2017?   (PAGA_CONTR_SIND_11_2017)	char	1	1		I		0
+3	FOEMPREGADOS	31	ENVIAR_S_2200_REINTEGRACAO	Enviar para o eSocial o evento S-2200 na reintegração. (0=Não/1=Sim)   (ENVIAR_S_2200_REINTEGRACAO)	smallint	1	7		I		0
+3	FOEMPREGADOS	32	contrib_indiv	Contribuinte individual   (contrib_indiv)	char	1	1		I		0
+3	FOEMPREGADOS	33	RECEBIA_SEGURO_DESEMPREGO	Recebia seguro desemprego. (0=Nenhum requerimento encontrado/1=Notificado - Parcela a Emitir/2=Notificado - Parcela Emitida/3=Notificado - Seguro Completo/4=Notificado - Mais de XX anos da Data de Demissão/Suspensão/5=Notificado - A restituir parcela	smallint	1	7		I		0
+3	FOEMPREGADOS	34	INCLUSAO_VALIDADA_ESOCIAL	Indica se o registro de inclusão no eSocial já foi validado. (0=Não/1=Sim)   (INCLUSAO_VALIDADA_ESOCIAL)	smallint	1	7		I		0
+3	FOEMPREGADOS	35	TIPO_INSCRICAO_EMPRESA_ORIGEM_DIRIGENTE_SINDICAL	Tipo de inscrição da empresa origem do dirigente sindical. (1=CNPJ/3=CEI)   (TIPO_INSCRICAO_EMPRESA_ORIGEM_DIRIGENTE_SINDICAL)	smallint	1	7		I		0
+3	FOEMPREGADOS	36	I_AFASTAMENTOS	CODIGO DO AFASTAMENTO DA ULTIMA SITUACAO DO EMPREGADO   (I_AFASTAMENTOS)	integer	1	7		I		0
+3	FOEMPREGADOS	37	salario	Salario   (salario)	numeric	1	17		I		6
+3	FOEMPREGADOS	38	CALCULAR_INSS_PATRONAL	Calcular INSS Patronal. (0=Não/1=Sim)   (CALCULAR_INSS_PATRONAL)	smallint	1	7		I		0
+3	FOEMPREGADOS	39	vinculo	Vinculo empregaticio                   (vinculo)	smallint	1	7		I		0
+3	FOEMPREGADOS	40	ORGAO_EXPEDICAO_RG	Orgão de expedição da RG.   (ORGAO_EXPEDICAO_RG)	smallint	1	7		I		0
+3	FOEMPREGADOS	41	INCLUSAO_VALIDADA_ESOCIAL_S_2206	Indica se o registro de inclusão no eSocial do evento S-2206 já foi validado. (0=Não/1=Sim)   (INCLUSAO_VALIDADA_ESOCIAL_S_2206)	smallint	1	7		I		0
+3	FOEMPREGADOS	42	BENEFICIADO_PAT_REFEICAO_CONVENIO	Beneficiado pelo PAT por convênio de refeição. (0=Não/1=Sim)   (BENEFICIADO_PAT_REFEICAO_CONVENIO)	smallint	1	7		I		0
+3	FOEMPREGADOS	43	grau_instrucao	Grau instrucao   (grau_instrucao)	smallint	1	7		I		0
+3	FOEMPREGADOS	44	RESIDENCIA_PROPRIA	Possui residência própria. (0=Não/1=Sim)   (RESIDENCIA_PROPRIA)	smallint	1	7		I		0
+3	FOEMPREGADOS	45	sexo	Sexo   (sexo)	char	1	1		I		0
+3	FOEMPREGADOS	46	deficiente_fisico	Deficiente fisico   (deficiente_fisico)	tinyint	1	3		I		0
+3	FOEMPREGADOS	47	ENDERECO_COMERCIAL	Endereço comercial. (0=Não/1=Sim)   (ENDERECO_COMERCIAL)	smallint	1	7		I		0
+3	FOEMPREGADOS	48	ENVIAR_ESOCIAL_S_2205	Enviar para o eSocial o evento S-2205. (0=Não/1=Sim)   (ENVIAR_ESOCIAL_S_2205)	smallint	1	7		I		0
+3	FOEMPREGADOS	49	TIPO_INDICATIVO_ADMISSAO	Tipo de indicativo da admissão. (1=1º emprego/2=Normal/3=Decorrente de ação fiscal/4=Decorrente de decisão judicial/5=Decorrente de Anistia Legal)   (TIPO_INDICATIVO_ADMISSAO)	smallint	1	7		I		0
+3	FOEMPREGADOS	50	ENVIAR_ESOCIAL_S_2206	Enviar para o eSocial o evento S-2206. (0=Não/1=Sim)   (ENVIAR_ESOCIAL_S_2206)	smallint	1	7		I		0
+3	FOEMPREGADOS	51	oco_sefip	Ocorrencia SEFIP   (oco_sefip)	integer	1	7		I		0
+3	FOEMPREGADOS	52	SITUACAO_QUALIFICACAO_CADASTRAL_INSS_RECEITA_FEDER	Situação da qualificação cadastral para o INSS e a Receita Federal. (0=Não qualificado/1=Qualificado)   (SITUACAO_QUALIFICACAO_CADASTRAL_INSS_RECEITA_FEDERAL)	smallint	1	7		I		0
+3	FOEMPREGADOS	53	BENEFICIADO_PAT_REFEICOES_TRANSPORTADAS	Beneficiado pelo PAT por transporte de refeição. (0=Não/1=Sim)   (BENEFICIADO_PAT_REFEICOES_TRANSPORTADAS)	smallint	1	7		I		0
+3	FOEMPREGADOS	54	emprego_ant	Tipo de admissão. (1=Admissão/2=Admissão por sucessão, incorporação ou fusão/3=Transferência com ônus/4=Transferência sem ônus/5=Reintegração)   (emprego_ant)	smallint	1	7		I		0
+3	FOEMPREGADOS	55	tempermuta	Permura de turma   (tempermuta)	tinyint	1	3		I		0
+3	FOEMPREGADOS	56	i_ccustos	Centro de Custos   (i_ccustos)	integer	1	7		I		0
+3	FOEMPREGADOS	57	DESLIGAMENTO_ENVIADO_ESOCIAL_REINTEGRACAO	Desligamento de empregado reintegrado enviado ao eSocial. (0=Não/1=Sim)   (DESLIGAMENTO_ENVIADO_ESOCIAL_REINTEGRACAO)	smallint	1	7		I		0
+3	FOEMPREGADOS	58	DESLIGAMENTO_REALIZADO_MESMO_BANCO_REINTEGRACAO	Desligamento de empregado reintegrado efetuado no mesmo banco. (0=Não/1=Sim)   (DESLIGAMENTO_REALIZADO_MESMO_BANCO_REINTEGRACAO)	smallint	1	7		I		0
+3	FOEMPREGADOS	59	EXCLUIR_EVENTO_S_2206_RETIFICACAO	Indica se o empregado possui algum evento S-2206/S-2306 sendo excluído do eSocial referente a uma retificação que excluiu a alteração.   (EXCLUIR_EVENTO_S_2206_RETIFICACAO)	smallint	1	7		I		0
+3	FOEMPREGADOS	60	USA_SALARIO_MINIMO_ESTADUAL	Usa salário mínimo estadual. (0=Não/1=Sim)   (USA_SALARIO_MINIMO_ESTADUAL)	smallint	1	7		I		0
+3	FOEMPREGADOS	61	categoria	Categoria   (categoria)	smallint	1	7		I		0
+3	FOEMPREGADOS	62	forma_pagto	Forma pagamento   (forma_pagto)	char	1	1		I		0
+3	FOEMPREGADOS	63	BENEFICIADO_PAT_ADMINISTRACAO_COZINHAS	Beneficiado pelo PAT por administração de cozinhas. (0=Não/1=Sim)   (BENEFICIADO_PAT_ADMINISTRACAO_COZINHAS)	smallint	1	7		I		0
+3	FOEMPREGADOS	64	i_empregados	Codigo   (i_empregados)	integer	1	7		I		0
+3	FOEMPREGADOS	65	APOSENTADO	Aposentado. (0=Não/1=Sim)   (APOSENTADO)	smallint	1	7		I		0
+3	FOEMPREGADOS	66	GERAR_RETIFICACAO_ESOCIAL_S_2206	Gerar retificação do evento S-2206 para o eSocial. (0=Não/1=Sim)   (GERAR_RETIFICACAO_ESOCIAL_S_2206)	smallint	1	7		I		0
+3	FOEMPREGADOS	67	CARGA_HORARIA_VARIAVEL	Carga horária variável. (0=Não/1=Sim)   (CARGA_HORARIA_VARIAVEL)	smallint	1	7		I		0
+3	FOEMPREGADOS	68	DESCONTAR_ESTOURO_RESCISAO_EMPRESA_ORIGEM	Descontar o estouro de rescisão da empresa origem na empresa destino. (0=Não/1=Sim)   (DESCONTAR_ESTOURO_RESCISAO_EMPRESA_ORIGEM)	smallint	1	7		I		0
+3	FOEMPREGADOS	69	GERAR_RETIFICACAO_ESOCIAL	Gerar retificação para o eSocial. (0=Não/1=Sim)   (GERAR_RETIFICACAO_ESOCIAL)	smallint	1	7		I		0
+3	FOEMPREGADOS	70	contr_sobre_sal_min	Calcular contribuição fixa sobre 1 salário mínimo: (0=Não/1=Sim)   (contr_sobre_sal_min)	tinyint	1	3		I		0
+3	FOEMPREGADOS	71	nome	Nome   (nome)	char	1	70		I		0
+3	FOEMPREGADOS	72	opta_fgts	Optante do FGTS   (opta_fgts)	char	1	1		I		0
+3	FOEMPREGADOS	73	BENEFICIADO_PAT_CESTA_ALIMENTOS	Beneficiado pelo PAT por cesta de alimentos. (0=Não/1=Sim)   (BENEFICIADO_PAT_CESTA_ALIMENTOS)	smallint	1	7		I		0
+3	FOEMPREGADOS	74	RESIDENTE_EXTERIOR	Residente ou domiciliado no exterior: (0=Não/1=Sim)   (RESIDENTE_EXTERIOR)	smallint	1	7		I		0
+3	FOEMPREGADOS	75	ALVARA_JUDICIAL	ALVARA JUDICIAL USADO NA RAIS PARA CELETISTAS MENORES DE 16 ANOS (0=NAO, 1=SIM, 2=NAO INFORMADO)   (ALVARA_JUDICIAL)	smallint	1	7		I		0
+3	FOEMPREGADOS	76	POSSUI_REDUCAO_ALIQUOTA_INSS	Possui redução na alíquota de INSS. (0=Não/1=Sim)   (POSSUI_REDUCAO_ALIQUOTA_INSS)	smallint	1	7		I		0
+3	FOEMPREGADOS	77	gps_deducao	Deducao na GPS   (gps_deducao)	tinyint	1	3		I		0
+3	FOEMPREGADOS	78	tipo_epr	tipo   (tipo_epr)	tinyint	1	3		I		0
+3	FOEMPREGADOS	79	troca_aut_clas	Troca automatica de classe   (troca_aut_clas)	tinyint	1	3		I		0
+3	FOEMPREGADOS	80	ENVIAR_REGISTRO_APOS_EXCLUSAO_ESOCIAL	Reenviar automaticamente o registro após a exclusão do mesmo no eSocial. (0=Não/1=Sim)   (ENVIAR_REGISTRO_APOS_EXCLUSAO_ESOCIAL)	smallint	1	7		I		0
+3	FOEMPREGADOS	81	BENEFICIADO_PAT_SERVICO_PROPRIO	Beneficiado pelo PAT por serviço próprio. (0=Não/1=Sim)   (BENEFICIADO_PAT_SERVICO_PROPRIO)	smallint	1	7		I		0
+3	FOEMPREGADOS	82	possui_vinc_out_emp	Multiplos vinculos   (possui_vinc_out_emp)	char	1	1		I		0
+3	FOEMPREGADOS	83	simples_072007	Atividade para o simples nacional   (simples_072007)	tinyint	1	3		I		0
+3	FOEMPREGADOS	84	REMUNERACAO_PERIODO_DESLIGAMENTO_REINTEGRACAO_PAGA	RemuneraÃ§Ãµes e respectivas contribuiÃ§Ãµes referentes ao perÃ­odo entre o desligamento e a reintegraÃ§Ã£o pagas em juÃ­zo. (0=NÃ£o/1=Sim)   (REMUNERACAO_PERIODO_DESLIGAMENTO_REINTEGRACAO_PAGAS_JUIZO)	smallint	1	7		I		0
+3	FOEMPREGADOS	85	horas_dia	Horas dia   (horas_dia)	numeric	1	5		I		2
+3	FOEMPREGADOS	86	TRANSFERIDO_COM_EMPREGADO_ORIGEM_VALIDADO_NO_ESOCI	Empregado transferido que teve seu empregado origem já validado no eSocial. (0=Não/1=Sim)   (TRANSFERIDO_COM_EMPREGADO_ORIGEM_VALIDADO_NO_ESOCIAL)	smallint	1	7		I		0
+3	FOEMPREGADOS	87	COTA_DIFICIENTE	Cota de deficiente. (0=Não/1=Sim)   (COTA_DIFICIENTE)	smallint	1	7		I		0
+3	FOEMPREGADOS	88	POSSUI_DEFICIENCIA_INTELECTUAL	Possui deficiência intelectual. (0=Não/1=Sim)   (POSSUI_DEFICIENCIA_INTELECTUAL)	smallint	1	7		I		0
+3	FOEMPREGADOS	89	GPS_CONJUNTA_NOVEMBRO_13_INTEGRAL	Recolher a competência de novembro e 13º integral em uma única GPS.(0-Não/1-Sim)   (GPS_CONJUNTA_NOVEMBRO_13_INTEGRAL)	smallint	1	7		I		0
