@@ -458,7 +458,7 @@ class EmployeeRegistry extends Registry
         ],
         'GPS_CONJUNTA_NOVEMBRO_13_INTEGRAL' => [
             'format'   => FieldC::class,
-            'position' => 596,
+            'position' => 603,
             'length'   => 7,
         ],
     ];
