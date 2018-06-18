@@ -3,14 +3,13 @@
 namespace Convenia\Dominio\EmployeeExport\Registries;
 
 use Convenia\Dominio\EmployeeExport\Fields\Formats\FieldC;
-use Convenia\Dominio\EmployeeExport\Fields\Formats\FieldN;
 
 /**
  * Class EmployeeRegistry.
  */
 class EmployeeRegistry extends Registry
 {
-    protected $length = 507;
+    protected $length = 609;
 
     /**
      * @var array
