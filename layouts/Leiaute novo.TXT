@@ -88,3 +88,14 @@
 3	FOEMPREGADOS	88	POSSUI_DEFICIENCIA_INTELECTUAL	Possui deficiência intelectual. (0=Não/1=Sim)   (POSSUI_DEFICIENCIA_INTELECTUAL)	smallint	1	7		I		0
 3	FOEMPREGADOS	89	GPS_CONJUNTA_NOVEMBRO_13_INTEGRAL	Recolher a competência de novembro e 13º integral em uma única GPS.(0-Não/1-Sim)   (GPS_CONJUNTA_NOVEMBRO_13_INTEGRAL)	smallint	1	7		I		0
 3	FOEMPREGADOS	90	i_servicos	Servico   (i_servicos)	integer	1	7		I		0
+3	FOEMPREGADOS	91	cpf	CPF   (cpf)	char	1	11		I		0
+3	FOEMPREGADOS	92	pis	PIS   (pis)	char	1	11		I		0
+3	FOEMPREGADOS	93	i_cargos	Cargo   (i_cargos)	integer	1	7		I		0
+3	FOEMPREGADOS	94	i_sindicatos	Sindicato   (i_sindicatos)	integer	1	7		I		0
+3	FOEMPREGADOS	95	cart_prof	CTPS   (cart_prof)	varchar	1	11		I		0
+3	FOEMPREGADOS	96	dt_exp_ident	Data   (dt_exp_ident)	date	1	10	DD/MM/YYYY	I		0
+3	FOEMPREGADOS	97	serie_cart_prof	Serie CTPS   (serie_cart_prof)	char	1	5		I		0
+3	FOEMPREGADOS	98	I_JORNADA	Código da jornada.   (I_JORNADA)	integer	1	7		I		0
+3	FOEMPREGADOS	99	endereco	Endereco   (endereco)	varchar	1	50		I		0
+3	FOEMPREGADOS	100	PAIS_NACIONALIDADE	Código do país da nacionalidade.   (PAIS_NACIONALIDADE)	integer	1	7		I		0
+3	FOEMPREGADOS	101	MUNICIPIO_NASCIMENTO	Código do município do local de nascimento   (MUNICIPIO_NASCIMENTO)	integer	1	7		I		0

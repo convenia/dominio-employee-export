@@ -9,7 +9,7 @@ use Convenia\Dominio\EmployeeExport\Fields\Formats\FieldC;
  */
 class EmployeeRegistry extends Registry
 {
-    protected $length = 609;
+    protected $length = 749;
 
     /**
      * @var array
@@ -458,6 +458,66 @@ class EmployeeRegistry extends Registry
         'GPS_CONJUNTA_NOVEMBRO_13_INTEGRAL' => [
             'format'   => FieldC::class,
             'position' => 603,
+            'length'   => 7,
+        ],
+        'i_servicos' => [
+            'format'   => FieldC::class,
+            'position' => 610,
+            'length'   => 7,
+        ],
+        'cpf' => [
+            'format'   => FieldC::class,
+            'position' => 617,
+            'length'   => 11,
+        ],
+        'pis' => [
+            'format'   => FieldC::class,
+            'position' => 628,
+            'length'   => 11,
+        ],
+        'i_cargos' => [
+            'format'   => FieldC::class,
+            'position' => 639,
+            'length'   => 7,
+        ],
+        'i_sindicatos' => [
+            'format'   => FieldC::class,
+            'position' => 646,
+            'length'   => 7,
+        ],
+        'cart_prof' => [
+            'format'   => FieldC::class,
+            'position' => 653,
+            'length'   => 11,
+        ],
+        'dt_exp_ident' => [
+            'format'   => FieldC::class,
+            'position' => 664,
+            'length'   => 10,
+        ],
+        'serie_cart_prof' => [
+            'format'   => FieldC::class,
+            'position' => 674,
+            'length'   => 5,
+        ],
+        'I_JORNADA' => [
+            'format'   => FieldC::class,
+            'position' => 679,
+            'length'   => 7,
+        ],
+        'endereco' => [
+            'format'   => FieldC::class,
+            'position' => 686,
+            'length'   => 50,
+        ],
+        'PAIS_NACIONALIDADE' => [
+            'format'   => FieldC::class,
+            'position' => 736,
+            'length'   => 7,
+        ],
+        'MUNICIPIO_NASCIMENTO' => [
+            'format'   => FieldC::class,
+            'position' => 743,
             'length'   => 7,
         ],
     ];
